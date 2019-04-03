@@ -3,6 +3,41 @@
     width: 25em;
 }
 
+.custom-header{
+    height: 70vh;
+    padding-bottom: 10vh;
+}
+
+.custom-header-text{
+    padding-top: 10vh;
+}
+
+.custom-header-text-bold{
+    font-size: 1.45em;
+}
+
+.custom-header-text-bold-sub{
+    font-size: 1.35em;
+}
+
+.custom-span-faded-6{
+    opacity: .6;
+}
+
+.custom-span-faded-8{
+    opacity: .8;
+}
+
+.custom-splash-page-image-thirds-1{
+    height: 18em;
+    width:  30em;
+}
+
+.custom-splash-page-image-thirds-2{
+    height: 95%;
+    width: 95%;
+}
+
 .to-your-home{
     height: 14em;
     width: 18em;
