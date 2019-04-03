@@ -3,6 +3,11 @@
     width: 25em;
 }
 
+.custom-grid-padding{
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
 .custom-header{
     height: 70vh;
     padding-bottom: 10vh;
