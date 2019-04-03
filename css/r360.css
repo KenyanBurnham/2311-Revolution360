@@ -4,8 +4,7 @@
 }
 
 .custom-grid-padding{
-    padding-left: 5vw;
-    padding-right: 5vw;
+    border: red solid 1px;
 }
 
 .custom-header{
@@ -33,12 +32,7 @@
     opacity: .8;
 }
 
-.custom-splash-page-image-thirds-1{
-    height: 18em;
-    width:  30em;
-}
-
-.custom-splash-page-image-thirds-2{
+.custom-splash-page-image-thirds{
     height: 95%;
     width: 95%;
 }
