@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>English 2311 - Revolution 360</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="css/r360.css">
+<head>
+    <!-- Meta -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>English 2311 - Revolution 360</title>
+    <!-- W3 Schools template stylesheets -->
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Font Stylesheets -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Custom Stylesheets -->
+        <link rel="stylesheet" href="css/r360.css">
+</head>
 <body>
 
   <!-- Navbar -->
@@ -16,7 +22,7 @@
       <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-blue" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
       <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Revolution<b style="color:#4CAF50;"> 360</b></a>
       <a href="technology.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">How it Works</a>
-      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Community</a>
+      <a href="community.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Community</a>
       <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Impact</a>
       <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About Us</a>
     </div>
@@ -127,23 +133,8 @@
  <p>Powered By: <img src="media/al.png" alt="Alternative Lifestyles Logo"></p>
 </footer>
 
-<script>
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else {
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-</script>
-<script type="text/javascript">
-    function relocateTechnology(){window.location.href('technology.html');}
-    function relocateCommunity(){window.location.href('community.html');}
-    function relocateImpact(){window.location.href('impact.html');}
-    function relocateAbout(){window.location.href('aboutUs.html');}
-</script>
-
+<!-- Scripts -->
+<script type="text/javascript" src="scripts/modal.js"></script>
+<script type="text/javascript" src="scripts/relocation.js"></script>
 </body>
 </html>
