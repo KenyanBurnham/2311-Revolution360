@@ -13,9 +13,6 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Custom Stylesheets -->
         <link rel="stylesheet" href="css/r360.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -39,38 +36,66 @@
       </div>
     </div>
 
+
     <!-- Header -->
-    <header class="w3-container w3-white w3-center" style=" height: 70vh; padding-top: 15vh;">
-        <svg xmlns="http://www.w3.org/2000/svg"style="opacity: .6; " width="100" height="100" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M9 9H8c.55 0 1-.45 1-1V7c0-.55-.45-1-1-1H7c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1H6c-.55 0-1 .45-1 1v2h1v3c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-3h1v-2c0-.55-.45-1-1-1zM7 7h1v1H7V7zm2 4H8v4H7v-4H6v-1h3v1zm2.09-3.5c0-1.98-1.61-3.59-3.59-3.59A3.593 3.593 0 0 0 4 8.31v1.98c-.61-.77-1-1.73-1-2.8 0-2.48 2.02-4.5 4.5-4.5S12 5.01 12 7.49c0 1.06-.39 2.03-1 2.8V8.31c.06-.27.09-.53.09-.81zm3.91 0c0 2.88-1.63 5.38-4 6.63v-1.05a6.553 6.553 0 0 0 3.09-5.58A6.59 6.59 0 0 0 7.5.91 6.59 6.59 0 0 0 .91 7.5c0 2.36 1.23 4.42 3.09 5.58v1.05A7.497 7.497 0 0 1 7.5 0C11.64 0 15 3.36 15 7.5z"/></svg>
-        <h1 class="w3-margin w3-jumbo w3-text-blue" style="padding-top: 3vh;">Advocate</h1>
-        <p class="w3-margin w3-large w3-text-black" style="opacity: .6;">Write an open letter to businesses in your community urging them to switch to wind energy.</p>
+    <header class="w3-container w3-center w3-blue custom-header">
+        <h2 class="w3-margin w3-jumbo w3-text-white custom-header-text">
+            <b class="custom-header-text-bold">Power</b>
+        </h2>
+        <h3 class="">
+            <span class="custom-span-faded-6">to the people.</span>
+        </h3>
+        <!--Photo by Karsten Würth (@inf1783) on Unsplash -->
+        <p class="w3-margin w3-text-white custom-header-text-bold-sub">
+            <span class="custom-span-faded-8">Revolution 360</span>
+            <span class="custom-span-faded-6">'s guide to sustainable energy in your community.</span>
+        </p>
+        <br>
     </header>
 
     <!-- First Grid -->
     <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-        <div class="w3-content" >
-            <div class="w3-third">
-                &nbsp;
+        <div class="w3-content custom-grid-padding">
+            <div class="w3-half">
+                <h1 class="w3-text-orange">Sustainable Energy</h1>
+                <h5 class="w3-padding-32">Wind energy doesn't have to be complicated.</h5>
+                <p class="w3-text-grey">Wind energy is an efficient, sustainable energy resource. It provides many benefits including energy that’s both renewable and unlimited.</p>
+                <button class="w3-button w3-orange w3-padding-large w3-large w3-margin-top" onclick="relocate()">Learn More</button>
             </div>
-            <div class="w3-third" style=" ">
-                <form>
-                    <div class="form-group" style="width: 100%;">
-                        <label for="exampleFormControlInput1">Company Email Address</label><br>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email@company.com">
-                    </div>
-                    <div class="form-group" style="width: 100%;">
-                        <br>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="(Company Name),"><br>
-                        <textarea style="padding: 1rem;" class="form-control" id="exampleFormControlTextarea1" rows="15" placeholder="Hello, I am a member of your community. I am concerned about the environment and the future impact of fossil fuels on our comunity. I would encourage your company to look into solutions from wind energy power providers such as Revolution360 (revolution360.com). Thank you for taking the time to read my open letter and I hope you will consider switching to sustainable energy sources."></textarea><br>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder=" - (Your Name)">
-                    </div>
-                    <div class="form-group">
-                        <button class="btn btn-lg btn-primary" type="button" name="button">Send</button>
-                    </div>
-                </form>
+
+            <div class="w3-half w3-center">
+                <img class="custom-splash-page-image-thirds" src="media/story.gif" alt="Wind turbine gif.">
             </div>
-            <div class="w3-third">
-                &nbsp;
+        </div>
+    </div>
+
+    <!-- Second Grid -->
+    <div class="w3-row-padding w3-padding-64 w3-container">
+        <div class="w3-content custom-grid-padding">
+            <div class="w3-half w3-center">
+                <img class="custom-splash-page-image-thirds" src="media/source.gif" alt="Wind turbine gif.">
+                <!-- Source: https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwit66nB7qzhAhUDlawKHc2vDhAQjRx6BAgBEAU&url=https%3A%2F%2Fgiphy.com%2Fgifs%2Fwindmill-jmOCfbLYXEjXW&psig=AOvVaw10dwDf1VrGEGwlKr6cCt9D&ust=1554138275701109 -->
+            </div>
+            <div class="w3-half">
+                <h1 class="w3-text-green">Community Benefits</h1>
+                <h5 class="w3-padding-32">Bringing wind energy into the community provides countless benefits.</h5>
+                <p class="w3-text-grey">Wind energy is beneficial for the entire community. Wind energy cultivated our environment, our economy as well as, human maintenance resources. Wind energy is a thriving resource that benefits society as a whole.</p>
+                <button class="w3-button w3-green w3-padding-large w3-large w3-margin-top">Learn More</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Third Grid -->
+    <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+        <div class="w3-content custom-grid-padding">
+            <div class="w3-half">
+                <h1 class="w3-text-blue">Impact</h1>
+                <h5 class="w3-padding-32">Together, members of the community and Revolution 360 can work together to build a better legacy.</h5>
+                <p class="w3-text-grey">Wind energy is a cost-effective energy solution that actively promotes environmental health as a sustainable energy alternative to fossil fuels.</p>
+                <button class="w3-button w3-blue w3-padding-large w3-large w3-margin-top">Learn More</button>
+            </div>
+            <div class="w3-half w3-center">
+                <img class="custom-splash-page-image-thirds" src="media/outline.gif" alt="Wind turbine gif.">
             </div>
         </div>
     </div>
@@ -106,6 +131,5 @@
     <!-- Scripts -->
         <script type="text/javascript" src="scripts/modal.js"></script>
         <script type="text/javascript" src="scripts/relocation.js"></script>
-
 </body>
 </html>

@@ -13,3 +13,7 @@ function relocateImpact(){
 function relocateAbout(){
     window.location.href('aboutUs.html');
 }
+
+function relocateHome(){
+    window.location.href('main.html');
+}
