@@ -27,13 +27,28 @@ body,h1,h2,h3,h4,h5,h6 {
 
 }
 
-.custom-header{
+.header-content-style{
     height: 70vh;
-    padding-bottom: 10vh;
+}
+
+.custom-header{
+    height: 100%;
+    width: 100%;
+    background-image: url('../media/spash-image.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.custom-header-fade{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom left,white,  white, black, black,  white);
+    opacity:.6;
 }
 
 .custom-header-text{
-    padding-top: 10vh;
+    padding-top: 15vh;
 }
 
 .custom-header-text-bold{
