@@ -65,7 +65,7 @@
                         <input type="email" class="form-control" id="exampleFormControlInput1" placeholder=" - (Your Name)">
                     </div>
                     <div class="form-group">
-                        <button class="btn btn-lg btn-primary" type="button" name="button">Send</button>
+                        <button class="btn btn-lg btn-primary" type="button" name="button" onclick="document.getElementById('id01').style.display='block'">Send</button>
                     </div>
                 </form>
             </div>
@@ -73,6 +73,43 @@
                 &nbsp;
             </div>
         </div>
+    </div>
+
+        <!-- The Modal -->
+    <div id="id01" class="w3-modal">
+      <div class="w3-modal-content">
+        <div class="w3-container">
+          <span onclick="document.getElementById('id01').style.display='none'"
+          class="w3-button w3-display-topright">&times;</span>
+          <div class="row w3-center">
+              <div class="col">
+                <br>
+                <h3 style="opacity: .8;">Message Sent</h3>
+                <hr>
+                <br>
+                <h5 style="opacity: .6;">Thank you for taking the time to advocate for a clean, sustainable future.</h5>
+                <br>
+                <hr>
+                <br>
+                <p style="opacity: .6;">Encourage another company</p>
+                <button class="w3-button w3-blue" onclick="relocateAdvocate()">Encourage Others</button>
+                <br><br>
+                <p style="opacity: .6;">- or -</p>
+                <p style="opacity: .6;">Encourage people in your community </p>
+                <div class="w3-xlarge w3-padding-16" style="opacity:.8;">
+                    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+                    <i class="fa fa-instagram w3-hover-opacity"></i>
+                    <i class="fa fa-snapchat w3-hover-opacity"></i>
+                    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+                    <i class="fa fa-twitter w3-hover-opacity"></i>
+                    <i class="fa fa-linkedin w3-hover-opacity"></i>
+               </div>
+               <br>
+              </div>
+          </div>
+
+        </div>
+      </div>
     </div>
 
     <!-- Resource Footer -->
