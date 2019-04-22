@@ -55,14 +55,14 @@
             <div class="w3-third" style=" ">
                 <form>
                     <div class="form-group" style="width: 100%;">
-                        <label for="exampleFormControlInput1">Company Email Address</label><br>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email@company.com">
+                        <label for="exampleFormControlInput1" onclick="enterInfo()">Company Email Address</label><br>
+                        <input type="email" class="form-control" id="companyEmail" placeholder="email@company.com">
                     </div>
                     <div class="form-group" style="width: 100%;">
                         <br>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="(Company Name),"><br>
-                        <textarea style="padding: 1rem;" class="form-control" id="exampleFormControlTextarea1" rows="15" placeholder="Hello, I am a member of your community. I am concerned about the environment and the future impact of fossil fuels on our comunity. I would encourage your company to look into solutions from wind energy power providers such as Revolution360 (revolution360.com). Thank you for taking the time to read my open letter and I hope you will consider switching to sustainable energy sources."></textarea><br>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder=" - (Your Name)">
+                        <input type="email" class="form-control" id="companyName" placeholder="(Company Name),"><br>
+                        <textarea style="padding: 1rem;" class="form-control" id="letter" rows="15" placeholder="Hello, I am a member of your community. I am concerned about the environment and the future impact of fossil fuels on our comunity. I would encourage your company to look into solutions from wind energy power providers such as Revolution360 (revolution360.com). Thank you for taking the time to read my open letter and I hope you will consider switching to sustainable energy sources."></textarea><br>
+                        <input type="email" class="form-control" id="yourName" placeholder=" - (Your Name)">
                     </div>
                     <div class="form-group">
                         <button class="btn btn-lg btn-primary" type="button" name="button" onclick="document.getElementById('id01').style.display='block'">Send</button>
@@ -79,27 +79,39 @@
     <div id="id01" class="w3-modal">
       <div class="w3-modal-content">
         <div class="w3-container">
-          <span onclick="document.getElementById('id01').style.display='none'"
-          class="w3-button w3-display-topright">&times;</span>
+          <p class="w3-button w3-display-topright" onclick="relocateAdvocate();">Close</p>
           <div class="row w3-center">
               <div class="col">
                 <br>
-                <h3 style="opacity: .8;">Message Sent</h3>
+                <h3 style="opacity: .8;" onclick="relocateAdvocate();">Message Sent</h3>
                 <hr>
                 <br>
-                <div class="message" hidden>
-                    <h5>Hello Steve,</h5>
-                    <p>
-                      I am writing to you as a proud member of the following organization: Greenpeace USA, PETA, and the Rainforest Action Network. I am very concerned about the environment, and quite frankly the EXXON Mobil Corporation (which includes yourself) is one of the biggest detriments to the environment. Not only does EXXON pollute the air with toxic oils and gasses, but also attempts to replace nature with landing platforms, oil rigs, and yes gas stations (aesthetic pollution). It’s gotten so bad that I can literally feel the polluted air eating away at my fur coat and leather boots. On top of that, your unforgivable gas prices mean that I can’t even drive out of State in my vehicle  (Tan Volkswagen 1967 Bus). Although I write to you from California, I am just as passionate about this cause and I won’t stop until something is done.
-                    </p>
-                    <p>
-                      Sincerely,
-                      <b>Rain</b>
-                    </p>
+                <div class="w3-left-align">
+                    <div class="row">
+                        <div class="col-2">
+                            &nbsp;
+                        </div>
+                        <div class="col-8 letter-background">
+                            <p>Hello Steve,</p>
+                            <p>
+                              I am writing to you as a proud member of the following organization: Greenpeace USA, PETA, and the Rainforest Action Network. I am very concerned about the environment, and quite frankly the EXXON Mobil Corporation (which includes yourself) is one of the biggest detriments to the environment. Not only does EXXON pollute the air with toxic oils and gasses, but also attempts to replace nature with landing platforms, oil rigs, and yes gas stations (aesthetic pollution). It’s gotten so bad that I can literally feel the polluted air eating away at my fur coat and leather boots. On top of that, your unforgivable gas prices mean that I can’t even drive out of State in my vehicle  (Tan Volkswagen 1967 Bus). Although I write to you from California, I am just as passionate about this cause and I won’t stop until something is done.
+                            </p>
+                            <p>
+                              Sincerely,
+                              <br>
+                              Rain
+                            </p>
+                        </div>
+                        <div class="col-2">
+                            &nbsp;
+                        </div>
+                    </div>
+
                 </div>
-                <h5 style="opacity: .6;">Thank you for taking the time to advocate for a clean, sustainable future.</h5>
                 <br>
                 <hr>
+                <br>
+                <h5 style="opacity: .6;">Thank you for taking the time to advocate for a clean, sustainable future.</h5>
                 <br>
                 <p style="opacity: .6;">Encourage another company</p>
                 <button class="w3-button w3-blue" onclick="relocateAdvocate()">Encourage Others</button>
@@ -130,7 +142,9 @@
         <button class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-margin-right" href="https://unsplash.com/search/photos/wind-power">Unsplash</button>
         <button class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-margin-right" href="https://sciencing.com/wind-turbines-impact-environment-positive-way-20177.html">Sciencig.com</button>
         <button class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-margin-right" href="https://www.ucsusa.org/clean-energy/renewable-energy/environmental-impacts-wind-power">UCSUSA.org</button>
-        <button class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-margin-right">Learn More</button>
+        <button class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-margin-right" href="https://tcaptx.com/education/the-texas-electricity-market-101">TCAPTX</button>
+        <button class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-margin-right" href="https://www.awea.org/wind-101/basics-of-wind-energy">LAWEA</button>
+        <button class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-margin-right" href="https://editor.method.ac/">Method Draw</button>
 
     </div>
 
@@ -150,6 +164,7 @@
     <!-- Scripts -->
         <script type="text/javascript" src="scripts/modal.js"></script>
         <script type="text/javascript" src="scripts/relocation.js"></script>
+        <script type="text/javascript" src="scripts/EnterInfo.js"></script>
 
 </body>
 </html>
